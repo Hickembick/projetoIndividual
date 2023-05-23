@@ -22,9 +22,9 @@ body html {
     overflow-x: hidden;
 }
 
-/* Navbar */
-.navbar {
-    position: absolute;
+   /* Navbar */
+   .navbar {
+    position: fixed; /* Adicionada propriedade position */
     top: 0;
     left: 0;
     display: flex;
@@ -32,17 +32,18 @@ body html {
     justify-content: space-between;
     padding: 20px;
     color: whitesmoke;
-}
+    background-color: #333; /* Adicionei um fundo para a barra de navegação */
+    opacity: 0.8;
+  }
 
-.nav-links {
+  .nav-links {
     display: flex;
     align-items: center;
-}
+  }
 
-.nav-links li {
+  .nav-links li {
     margin: 0 30px;
-}
-
+  }
 header {
     width: 100vw;
     height: 100vh;
@@ -187,3 +188,72 @@ p {
 .hobbies-content p {
     color: rgb(221, 221, 221);
 }
+
+/* Fotos */
+.content-col {
+    width: 40%;
+}
+
+.imagem-col {
+    width: 60%;
+}
+
+.fotos .imagem-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+}
+.imagem-galeria img {
+    width: 300px;
+    margin: 5px;
+}
+
+.content-col h1 {
+    font-size: 7vmin;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 5px;
+  } 
+ 
+  .footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer h1 {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
