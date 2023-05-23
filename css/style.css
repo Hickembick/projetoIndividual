@@ -18,6 +18,10 @@ ul {
     font-weight: bold;
 }
 
+body html {
+    overflow-x: hidden;
+}
+
 /* Navbar */
 .navbar {
     position: absolute;
@@ -111,6 +115,44 @@ header {
         width: 40px;
         cursor: pointer;
     }
+}
 
-    
+/* Events */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+events .row {
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+p {
+    color: #7c7c7c;
+    padding: 0px;
 }
