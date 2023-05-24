@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <title>Jéssica</title>
 </head>
 
 <body>
     <nav class="navbar">
-        <h1 class="logo">Aventuras</h1>
+        <h1 class="logo">Codigo da Amanha</h1>
         <ul class="nav-links">
-            <li class="actite"><a href="#">Inicio</a></li>
-            <li><a href="#sobre">Sobre </a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
+            <li class="active"><a class="ctn" href="#header">Inicio</a></li>
+            <li><a class="ctn" href="#sobre">Sobre</a></li>
+            <li><a class="ctn" href="#hobbies">Hobbies</a></li>
             <li><a class="ctn" href="#contato">Contato</a></li>
         </ul>
     </nav>
-    <header>
-        <div class="header-content">
-            <h2>Minha Viagens!</h2>
-            <div class="line">
 
-            </div>
+    <header id="header">
+        <div class="header-content">
             <h1>Jéssica Hickembick</h1>
-            <a href="" class="ctn">Saiba Mais</a>
+            <div class="line"></div>
         </div>
     </header>
 
@@ -38,55 +35,110 @@
         </div>
         <div class="row">
             <div class="col">
-                <img src="./img/je.jpg" width="350px" alt="">
-                <h4>Praias</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                <h4 class="resumo-title"> <i> Um pequeno resumo</i></h4>
+                <p class="resumo-text"> Sou Jessica, uma curitibana apaixonada por viagens, comida deliciosa e, é claro,
+                    café. Com uma dog maravilhosa chamada Temari. No passado, explorei o mundo da contabilidade e
+                    financeiro, adquirindo habilidades valiosas nessa área. No entanto, estou emocionada com as
+                    oportunidades futuras que o Código do Amanhã me reserva. Embora as viagens no tempo sejam apenas
+                    parte da imaginação, estou ansiosa para mergulhar de cabeça nesse curso e expandir meus
+                    conhecimentos em tecnologia e programação. Com isso, espero desenvolver novos projetos inovadores
+                    que possam impactar positivamente a vida das pessoas, talvez até mesmo criar soluções que facilitem
+                    as viagens, descubram experiências gastronômicas únicas ou até mesmo melhorem a qualidade do café
+                    que tanto amo. Mal posso esperar para abraçar essa nova etapa com entusiasmo e abrir portas para um
+                    futuro promissor!</p>
             </div>
             <div class="col">
-                <img src="./img/capa.jpg" width="350" alt="">
-                <h4>Arrail do Cabo </h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                <img src="./img/capa.jpg" class="resumo-image estilizar-foto" alt="">
             </div>
         </div>
+        </div>
     </section>
-    <section id="hobbies" class="hobbies">
-        <div class="hobbies-content">
+
+    <section id="hobbies">
+        <div class="title">
             <h1>Hobbies</h1>
             <div class="line"></div>
-            <h4>Arrail do Cabo </h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+        </div>
+        <div class="container fotos">
+            <div class="box">
+                <img src="./img/viagem.jpg" />
+                <span>Viagens</span>
+            </div>
+            <div class="box">
+                <img src="./img/voluntarioado.jpeg" />
+                <span>Voluntariado</span>
+            </div>
+            <div class="box">
+                <img src="./img/temari2.jpg" />
+                <span>Series, filmes e Animes</span>
+            </div>
+            <div class="box">
+                <img src="./img/livros.jpg" />
+                <span>Leitura</span>
+            </div>
+            <div class="box">
+                <img src="./img/clash.jpg" />
+                <span>Jogos (Clash of Clans a 8 anos)</span>
+            </div>
         </div>
     </section>
-    <section class="fotos">
-        <div class="row">
-            <div class="col content-col">
-                <h1>Algumas fotos</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea, nostrum atque sunt itaque
-                    ratione consectetur dolor! Est, aut quaerat beatae itaque nobis et expedita fuga alias, tempora,
-                    facere quis?</p>
-            </div>
-            <div class="container">
-                <img class="box" width="100%" src="img/je.jpg" alt="">
-                <img class="box" width="100%" src="img/je.jpg" alt="">
 
+    <section id="contato" class="contato">
+        <div class="title">
+            <h1>Contato</h1>
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            <div class="form-wrapper">
+                <form class="form-container" action="#" method="POST">
+                    <h2>Entre em contato</h2>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            <div class="container">
-                <img class="box" width="100%" src="img/je.jpg" alt="">
-                <img class="box" width="100%" src="img/je.jpg" alt="">
-
+            <div class="image-area">
+                <div class="img-wrapper">
+                    <img src="img/capa.jpg" alt="Jéssica Hickembick" />
+                    <h2>Jéssica Hickembick</h2>
+                    <ul>
+                        <li>
+                            <a href="https://github.com"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <section id="contato" class="footer">
-        <h1>Contato</h1>
-        <div class="social-icons">
-          <img src="img/capa.jpg" alt="Foto" />
-          <a href="mailto:seuemail@example.com"><i class="fas fa-envelope"></i></a>
-          <a href="https://wa.me/seunumerodetelefone"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+
+    <footer class="footer">
+        <div class="legal">
+            <p>&copy; 2023 .Todos direitos reservados Jéssica Hickembick.</p>
+
+            <div class="legal__links">
+                <span>Resilia<span class="heart">♥</span> Ebanx</span>
+            </div>
         </div>
-      </section>
+    </footer>
 </body>
 
 </html>
